@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "es2015",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"noUncheckedIndexedAccess": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/api/*": ["src/pages/api/*"],
+			"@/components/*": ["src/components/*"],
+			"@/controllers/*": ["src/controllers/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/layouts/*": ["src/layouts/*"],
+			"@/pages/*": ["src/pages/*"],
+			"@/public/*": ["public/*"],
+			"@/utils/*": ["src/utils/*"],
+			"@/styles/*": ["src/styles/*"],
+			"@/types/*": ["src/types/*"],
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"next-auth.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.js"
+	],
+	"exclude": ["node_modules"]
+}
